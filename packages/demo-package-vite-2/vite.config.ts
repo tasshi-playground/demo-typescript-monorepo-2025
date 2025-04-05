@@ -33,7 +33,6 @@ export default defineConfig({
   },
   plugins: [
     dts({
-      tsconfigPath: "tsconfig.build.json",
       // modify type files after they have been written
       // ref. https://github.com/qmhc/vite-plugin-dts/issues/267#issuecomment-2142950802
       afterBuild: async () => {

@@ -4,9 +4,6 @@ import { fileURLToPath } from "node:url";
 
 import dts from "vite-plugin-dts";
 import { viteStaticCopy } from "vite-plugin-static-copy";
-import fsExtra from "fs-extra";
-import fs from "node:fs/promises";
-import { glob } from "glob";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -36,7 +33,6 @@ export default defineConfig({
   },
   plugins: [
     dts({
-      tsconfigPath: "tsconfig.build.json",
       outDir: [`${outDir}/es`, `${outDir}/cjs`],
     }),
     viteStaticCopy({

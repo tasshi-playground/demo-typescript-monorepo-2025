@@ -1,12 +1,7 @@
 {
   "extends": "@tasshi-playground/tsconfig",
-  "files": [],
-  "references": [
-    {
-      "path": "tsconfig.build.json"
-    },
-    {
-      "path": "tsconfig.typecheck.json"
-    }
-  ]
+  "compilerOptions": {
+    "rootDir": "src"
+  },
+  "include": ["**/*"]
 }
