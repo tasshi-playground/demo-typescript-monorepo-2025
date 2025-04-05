@@ -1,0 +1,34 @@
+{
+  "name": "@tasshi-playground/eslint-config-internal",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "license": "MIT",
+  "author": "",
+  "type": "module",
+  "exports": {
+    ".": {
+      "node": {
+        "import": "./index.js",
+        "require": "./index.js",
+        "default": "./index.js"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "index.js",
+  "scripts": {
+    "fix": "pnpm run \"/^fix:.*/\"",
+    "fix:eslint": "pnpm run lint:eslint --fix",
+    "fix:prettier": "pnpm lint:prettier --write",
+    "lint": "pnpm run \"/^lint:.*/\"",
+    "lint:eslint": "eslint",
+    "lint:prettier": "prettier --check '**/*.{json,md,yml,yaml}' --cache",
+    "lint:publint": "publint",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@cybozu/eslint-config": "^24.0.0",
+    "eslint-plugin-package-json": "^0.29.0"
+  }
+}
