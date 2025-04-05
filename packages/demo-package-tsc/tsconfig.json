@@ -1,0 +1,10 @@
+{
+  "extends": "@tasshi-playground/tsconfig",
+  "files": [],
+  "references": [
+    {
+      "path": "tsconfig.build.esm.json"
+    },
+    { "path": "tsconfig.build.cjs.json" }
+  ]
+}

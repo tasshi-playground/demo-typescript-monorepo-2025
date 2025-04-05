@@ -22,6 +22,7 @@
     "index.browser.js"
   ],
   "scripts": {
+    "build": "tsc --build && echo '{\"type\": \"module\"}' > lib/esm/package.json && echo '{\"type\": \"commonjs\"}' > lib/cjs/package.json",
     "fix": "pnpm run \"/^fix:.*/\"",
     "fix:eslint": "pnpm run lint:eslint --fix",
     "fix:prettier": "pnpm lint:prettier --write",
