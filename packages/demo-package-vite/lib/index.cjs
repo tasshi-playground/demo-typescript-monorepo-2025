@@ -1,0 +1,2 @@
+"use strict";Object.defineProperties(exports,{__esModule:{value:!0},[Symbol.toStringTag]:{value:"Module"}});const u=require("./sub.cjs"),e=()=>!0;exports.subFn=u.subFn;exports.default=e;exports.fn=e;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguY2pzIiwic291cmNlcyI6WyIuLi9zcmMvaW5kZXgudHMiXSwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGNvbnN0IGZuID0gKCkgPT4gdHJ1ZTtcbmV4cG9ydCB7IHN1YkZuIH0gZnJvbSBcIi4vc3ViLmpzXCI7XG5cbmV4cG9ydCBkZWZhdWx0IGZuO1xuIl0sIm5hbWVzIjpbImZuIl0sIm1hcHBpbmdzIjoieUlBQWFBLEVBQUssSUFBTSJ9

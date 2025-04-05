@@ -1,5 +1,6 @@
-// src/sub.ts
-var subFn = () => false;
+import {
+  subFn
+} from "./chunk-ELIUZL5K.js";
 
 // src/index.ts
 var fn = () => true;

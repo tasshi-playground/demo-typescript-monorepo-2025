@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/index.browser.ts","../src/sub.ts"],"sourcesContent":["export const fn = () => true;\nexport { subFn } from \"./sub.js\";\n\nexport default fn;\n","export const subFn = () => false;\n"],"mappings":";;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;;ACAO,IAAM,QAAQ,MAAM;;;ADApB,IAAM,KAAK,MAAM;AAGxB,IAAO,wBAAQ;","names":[]}

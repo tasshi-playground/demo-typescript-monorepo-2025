@@ -1,1 +1,1 @@
-{"version":3,"sources":["../src/sub.ts","../src/index.ts"],"sourcesContent":["export const subFn = () => false;\n","export const fn = () => true;\nexport { subFn } from \"./sub.js\";\n\nexport default fn;\n"],"mappings":";AAAO,IAAM,QAAQ,MAAM;;;ACApB,IAAM,KAAK,MAAM;AAGxB,IAAO,gBAAQ;","names":[]}
+{"version":3,"sources":["../src/index.ts"],"sourcesContent":["export const fn = () => true;\nexport { subFn } from \"./sub.js\";\n\nexport default fn;\n"],"mappings":";;;;;AAAO,IAAM,KAAK,MAAM;AAGxB,IAAO,gBAAQ;","names":[]}

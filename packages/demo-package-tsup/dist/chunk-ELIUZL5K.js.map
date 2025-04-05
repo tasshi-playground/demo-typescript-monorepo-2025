@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/sub.ts"],"sourcesContent":["export const subFn = () => false;\n"],"mappings":";AAAO,IAAM,QAAQ,MAAM;","names":[]}
