@@ -27,7 +27,7 @@
     "fix:prettier": "pnpm lint:prettier --write",
     "lint": "pnpm run \"/^lint:.*/\"",
     "lint:eslint": "eslint",
-    "lint:prettier": "prettier --check '**/*.{json,md,yml,yaml}' --cache",
+    "lint:prettier": "prettier --check '**/*.{json,json5,md,yml,yaml}' --cache",
     "lint:publint": "publint",
     "test": "vitest"
   },

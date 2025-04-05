@@ -16,7 +16,7 @@
     "lint": "pnpm run \"/^lint:.*/\"",
     "lint:eslint": "eslint",
     "lint:packages": "pnpm -r --parallel run lint",
-    "lint:prettier": "prettier --check '**/*.{json,md,yml,yaml}' --cache",
+    "lint:prettier": "prettier --check '**/*.{json,json5,md,yml,yaml}' --cache",
     "test": "vitest"
   },
   "devDependencies": {
