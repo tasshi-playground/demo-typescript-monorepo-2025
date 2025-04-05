@@ -8,6 +8,7 @@
     {
       "path": "tsconfig.build.esm.json"
     },
-    { "path": "tsconfig.build.cjs.json" }
+    { "path": "tsconfig.build.cjs.json" },
+    { "path": "tsconfig.typecheck.json" }
   ]
 }

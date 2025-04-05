@@ -34,6 +34,7 @@ export default defineConfig({
   plugins: [
     dts({
       outDir: [`${outDir}/es`, `${outDir}/cjs`],
+      exclude: ["**/__tests__/*", "**/*.test.ts"],
     }),
     viteStaticCopy({
       targets: [

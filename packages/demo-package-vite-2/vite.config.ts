@@ -33,6 +33,7 @@ export default defineConfig({
   },
   plugins: [
     dts({
+      exclude: ["**/__tests__/*", "**/*.test.ts"],
       // modify type files after they have been written
       // ref. https://github.com/qmhc/vite-plugin-dts/issues/267#issuecomment-2142950802
       afterBuild: async () => {

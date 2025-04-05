@@ -1,9 +1,11 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
+    "noEmit": false,
     "composite": true,
     "rootDir": "src",
     "outDir": "lib/esm"
   },
-  "include": ["src"]
+  "include": ["src"],
+  "exclude": ["**/__tests__/*", "**/*.test.ts"]
 }
