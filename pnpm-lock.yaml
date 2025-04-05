@@ -45,6 +45,15 @@ importers:
         specifier: ^5.8.3
         version: 5.8.3
 
+  packages/demo-package-private:
+    devDependencies:
+      '@tasshi-playground/eslint-config':
+        specifier: workspace:^
+        version: link:../../internals/eslint-config
+      tsup:
+        specifier: ^8.4.0
+        version: 8.4.0(typescript@5.8.3)
+
   packages/demo-package-tsc:
     devDependencies:
       '@tasshi-playground/eslint-config':
@@ -53,6 +62,9 @@ importers:
 
   packages/demo-package-tsup:
     devDependencies:
+      '@tasshi-playground/demo-package-private':
+        specifier: workspace:^
+        version: link:../demo-package-private
       '@tasshi-playground/eslint-config':
         specifier: workspace:^
         version: link:../../internals/eslint-config
