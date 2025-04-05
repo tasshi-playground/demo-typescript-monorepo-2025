@@ -1,5 +1,5 @@
 {
-  "name": "@tasshi-playground/demo-package-foo",
+  "name": "@tasshi-playground/demo-package-tsc",
   "version": "1.0.0",
   "description": "",
   "license": "MIT",
@@ -16,6 +16,9 @@
     "./package.json": "./package.json"
   },
   "main": "index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "fix": "pnpm run \"/^fix:.*/\"",
     "fix:eslint": "pnpm run lint:eslint --fix",
@@ -27,6 +30,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "@tasshi-playground/eslint-config-internal": "workspace:^"
+    "@tasshi-playground/eslint-config": "workspace:^"
   }
 }

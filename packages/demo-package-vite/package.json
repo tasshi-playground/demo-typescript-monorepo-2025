@@ -1,7 +1,6 @@
 {
-  "name": "@tasshi-playground/eslint-config-internal",
+  "name": "@tasshi-playground/demo-package-vite",
   "version": "1.0.0",
-  "private": true,
   "description": "",
   "license": "MIT",
   "author": "",
@@ -17,6 +16,9 @@
     "./package.json": "./package.json"
   },
   "main": "index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "fix": "pnpm run \"/^fix:.*/\"",
     "fix:eslint": "pnpm run lint:eslint --fix",
@@ -27,8 +29,7 @@
     "lint:publint": "publint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "@cybozu/eslint-config": "^24.0.0",
-    "eslint-plugin-package-json": "^0.29.0"
+  "devDependencies": {
+    "@tasshi-playground/eslint-config": "workspace:^"
   }
 }

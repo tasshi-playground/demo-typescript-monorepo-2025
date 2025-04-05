@@ -2,6 +2,9 @@
 /packages/*/lib
 /packages/*/dist
 /packages/*/esm
+/internals/*/lib
+/internals/*/dist
+/internals/*/esm
 
 # Ignore tsconfig file
 tsconfig.json

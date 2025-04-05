@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/sub.ts","../src/index.ts"],"sourcesContent":["export const subFn = () => false;\n","export const fn = () => true;\nexport { subFn } from \"./sub\";\n\nexport default fn;\n"],"mappings":";AAAO,IAAM,QAAQ,MAAM;;;ACApB,IAAM,KAAK,MAAM;AAGxB,IAAO,gBAAQ;","names":[]}

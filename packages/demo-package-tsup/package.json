@@ -1,30 +1,37 @@
 {
-  "name": "@tasshi-playground/demo-typescript-monorepo-2025",
+  "name": "@tasshi-playground/demo-package-tsup",
   "version": "1.0.0",
-  "private": true,
   "description": "",
   "license": "MIT",
   "author": "",
   "type": "module",
-  "main": "index.js",
+  "exports": {
+    ".": {
+      "node": {
+        "import": "./dist/index.js",
+        "require": "./dist/index.cjs",
+        "default": "./dist/index.js"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
+    "build": "tsup",
     "fix": "pnpm run \"/^fix:.*/\"",
     "fix:eslint": "pnpm run lint:eslint --fix",
-    "fix:packages": "pnpm -r --parallel run fix",
     "fix:prettier": "pnpm lint:prettier --write",
     "lint": "pnpm run \"/^lint:.*/\"",
     "lint:eslint": "eslint",
-    "lint:packages": "pnpm -r --parallel run lint",
     "lint:prettier": "prettier --check '**/*.{json,md,yml,yaml}' --cache",
+    "lint:publint": "publint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
     "@tasshi-playground/eslint-config": "workspace:^",
-    "@tasshi-playground/tsconfig": "workspace:^",
-    "eslint": "^9.24.0",
-    "prettier": "^3.5.3",
-    "publint": "^0.3.10",
-    "typescript": "^5.8.3"
-  },
-  "packageManager": "pnpm@8.15.9+sha512.499434c9d8fdd1a2794ebf4552b3b25c0a633abcee5bb15e7b5de90f32f47b513aca98cd5cfd001c31f0db454bc3804edccd578501e4ca293a6816166bbd9f81"
+    "tsup": "^8.4.0"
+  }
 }

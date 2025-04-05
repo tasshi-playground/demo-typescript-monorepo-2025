@@ -5,14 +5,7 @@ import eslintPluginPackageJson from "eslint-plugin-package-json";
 export default [
   ...presetsNodeTypescriptPrettier,
   {
-    rules: {
-      "n/no-unpublished-import": [
-        "error",
-        {
-          allowModules: ["@tasshi-playground/eslint-config-internal"],
-        },
-      ],
-    },
+    ignores: ["lib", "esm", "umd", "dist"],
   },
   eslintPluginPackageJson.configs.recommended,
 ];

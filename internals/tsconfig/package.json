@@ -1,0 +1,23 @@
+{
+  "name": "@tasshi-playground/tsconfig",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "license": "MIT",
+  "author": "",
+  "type": "module",
+  "exports": {
+    ".": "./tsconfig.json"
+  },
+  "main": "tsconfig.json",
+  "files": [
+    "tsconfig.json"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@tasshi-playground/eslint-config": "workspace:^",
+    "typescript": "^5.8.3"
+  }
+}
