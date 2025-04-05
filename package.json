@@ -8,6 +8,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
+    "build": "pnpm -r --parallel run build",
     "fix": "pnpm run \"/^fix:.*/\"",
     "fix:eslint": "pnpm run lint:eslint --fix",
     "fix:packages": "pnpm -r --parallel run fix",
